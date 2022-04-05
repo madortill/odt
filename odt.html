@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/JQuery/jquery-ui.css">
+    <link rel="stylesheet" href="odt.css">
+    <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/JQuery/jquery-ui.min.js"></script>
+    <script src="odt.js"></script>
+    <title>odt</title>
+</head>
+<body>
+    <!-- home -->
+    <div id="home-page" class="page">
+        <div class="container">
+            <div class="title">ODT</div>
+            <div class="little-title">Out Door Training</div>
+            <center>
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="${Arr_Location[i-1].video}/mp4">
+                    <source src="movie.ogg" type="${Arr_Location[i-1].video}/ogg">
+                </video>
+            </center>
+            <div class="text">סדנאות בהן אנו יוצאים מהמרחב הסגור בו אנו רגילים ללמוד ולעבוד, אל המרחבים הפתוחים שבאמצעותם ניתן לפתח כישורי מנהיגות ועבודת צוות באמצעות פעילויות בשטח.<br>המשתתפים לוקחים חלק בפעילויות השונות בסיוע מדריך או יועץ, שמאפשר להם לעבד את חוויותיהם ומסייע להם לבצע העברה של הידע והכישורים שפיתחו בהקשר עבודתם.</div>
+        </div>
+    </div>
+
+    <!-- map -->
+    <div id="map-page" class="page">
+        <div class="container">
+            <div class="title">מפת המתחם</div>
+            <div id="map">
+            </div>
+        </div>
+    </div>
+
+    <!-- menu button -->
+    <div id="buttons">
+        <div id="menu-button" class="button">תפריט</div>
+        <div id="home-button" class="button">לדף הבית</div>
+        <div id="map-button" class="button">למפה</div>
+    </div>
+    <!-- meun -->
+    <div id="menu">
+        <div id="x" class="button">X</div>
+    </div>
+</body>
