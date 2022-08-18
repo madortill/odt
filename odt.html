@@ -3,46 +3,51 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/JQuery/jquery-ui.css">
     <link rel="stylesheet" href="odt.css">
-    <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
-    <script src="assets/JQuery/jquery-ui.min.js"></script>
     <script src="odt.js"></script>
     <title>odt</title>
 </head>
 <body>
     <!-- home -->
-    <div id="home-page" class="page">
+    <div id="home-page" class="bg">
+        <img class="menuButton" src="./assets/media/SVG/menuButton.svg">
         <div class="container">
-            <div class="title">ODT</div>
-            <div class="little-title">Out Door Training</div>
-            <center>
-                <video width="320" height="240" controls>
-                    <source src="movie.mp4" type="${Arr_Location[i-1].video}/mp4">
-                    <source src="movie.ogg" type="${Arr_Location[i-1].video}/ogg">
-                </video>
-            </center>
-            <div class="text">סדנאות בהן אנו יוצאים מהמרחב הסגור בו אנו רגילים ללמוד ולעבוד, אל המרחבים הפתוחים שבאמצעותם ניתן לפתח כישורי מנהיגות ועבודת צוות באמצעות פעילויות בשטח.<br>המשתתפים לוקחים חלק בפעילויות השונות בסיוע מדריך או יועץ, שמאפשר להם לעבד את חוויותיהם ומסייע להם לבצע העברה של הידע והכישורים שפיתחו בהקשר עבודתם.</div>
+            <img class="welcomeTitle centerX" src="./assets/media/SVG/welcomeHeadline.svg">
+            <!-- <div class="title centerX"><span class="yellow">WELCOME </span><span class="blue">TO </span> <span class="red">THE</span></div> -->
+            <!-- <div class="titleOdt centerX"><span class="yellow">Out </span> <span class="blue">Door </span> <span class="red">Training</span></div> -->
+            <video class="centerX" width="320" height="240" controls>
+                <source src="./assets/media/video/welcome.mp4" type="video/mp4">
+            </video>
+            <div class="text centerX">סדנאות בהן אנו יוצאים מהמרחב הסגור בו אנו רגילים ללמוד ולעבוד, אל המרחבים הפתוחים שבאמצעותם ניתן לפתח כישורי מנהיגות ועבודת צוות באמצעות פעילויות בשטח.<br>המשתתפים לוקחים חלק בפעילויות השונות בסיוע מדריך או יועץ, שמאפשר להם לעבד את חוויותיהם ומסייע להם לבצע העברה של הידע והכישורים שפיתחו בהקשר עבודתם.</div>
+            <img class="mapButton centerX" src="./assets/media/SVG/mapButton.svg">
         </div>
     </div>
 
     <!-- map -->
-    <div id="map-page" class="page">
+    <div id="map-page" class="hidden">
         <div class="container">
-            <div class="title">מפת המתחם</div>
+            <img class="exitButton" src="./assets/media/SVG/exitButton.svg">
+            <div class="title centerX">מפת המתחם</div>
+            <div class="titleOdt centerX"><span class="yellow">Out </span> <span class="blue">Door </span> <span class="red">Training</span></div>
             <div id="map">
+                <div class="station xAndYStation"></div>
+                <div class="station ProcessingStation ProcessingStation1"></div>
+                <div class="station ProcessingStation ProcessingStation2"></div>
+                <div class="station ProcessingStation ProcessingStation3"></div>
+                <div class="station keyboardStation"></div>
+                <div class="station blindStation"></div>
+                <div class="station handStation"></div>
+                <div class="station raftStation"></div>
+                <div class="station spiderStation"></div>
+                <div class="station spiralStation"></div>
+                <div class="station welcomeStation"></div>
+                <div class="station safetyStation"></div>
             </div>
         </div>
     </div>
 
-    <!-- menu button -->
-    <div id="buttons">
-        <div id="menu-button" class="button">תפריט</div>
-        <div id="home-button" class="button">לדף הבית</div>
-        <div id="map-button" class="button">למפה</div>
-    </div>
     <!-- meun -->
-    <div id="menu">
+    <div id="menu" class="hidden">
         <div id="x" class="button">X</div>
     </div>
 </body>
