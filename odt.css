@@ -1,13 +1,13 @@
 @font-face {
-    font-family: Rubik;
-    src: url(assets/fonts/Rubik-Regular.ttf);
+    font-family: Almoni;
+    src: url(assets/fonts/Almoni/almoni-tzar-regular-aaa.otf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: Almoni;
-    src: url(assets/fonts/Almoni/almoni-tzar-regular-aaa.otf);
-    font-weight: 500;
+    src: url(assets/fonts/Almoni/almoni-tzar-bold-aaa.otf);
+    font-weight: 700;
 }
 
 html,
@@ -33,6 +33,16 @@ body, #main {
     width: 100%;
 }
 
+#xAndYPage {
+    background-image: url(./assets/media/SVG/xAndYStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .menuButton {
     width: 9vw;
     position: absolute;
@@ -48,56 +58,26 @@ body, #main {
 }
 
 .title {
-    width: fit-content;
-    min-width: 55vw;
-    top: 3vh;
-    text-align: center;
-    color: white;
-    /* font-family: "Rubik"; */
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.welcomeTitle {
    top: 5vh; 
+   width: 50vw;
 }
 
-.title:after{
-    content:""; 
-    float:left; 
-    background:white; 
-    width:100%; 
-    height:4px; 
-    border-radius: 3px;
+.stationTitle {
+    font-size: 1.4em;
+    background: -webkit-linear-gradient(180deg, #85d1f5, #0790d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
-.titleOdt {
-  /* font-family: "Rubik"; */
-  width: fit-content;
-  min-width: 61vw;
-  top: 11vh;
-  text-align: center;
+.questionMark {
+    width: 4vw;
+    padding-left: 0.3em;
 }
 
-.yellow {
-    color: #edda9d;
-    text-shadow: -1.5px 1px #f7b173;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.blue {
-    color: #7fcad2;
-    text-shadow: -1.5px 1px #40b2a7;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.red {
-    color: #f29597;
-    text-shadow: -1.5px 1px #ee726d;
-    font-size: 1.5em;
-    font-weight: bold;
+.textHomePage {
+    display: flex;
+    align-items: flex-start;
 }
 
 video {
@@ -108,7 +88,7 @@ video {
 .text {
     width: 80vw;
     top: 55vh;
-    font-family: "Rubik";
+    font-size: 1.1em;
 }
 
 .mapButton  {
@@ -139,7 +119,7 @@ video {
     grid-area: 2/ 2/ span 1/ span 1;
 }
 
-.ProcessingStation1 {
+/* .ProcessingStation1 {
     grid-area: 2/ 4/ span 1/ span 1;
 }
 
@@ -149,7 +129,7 @@ video {
 
 .ProcessingStation3 {
     grid-area: 7/ 5/ span 1/ span 1;
-}
+} */
 
 .keyboardStation {
     grid-area: 3/ 2/ span 1/ span 1;
@@ -175,13 +155,13 @@ video {
     grid-area: 6/ 4/ span 1/ span 1;
 }
 
-.welcomeStation {
+/* .welcomeStation {
     grid-area: 7/ 2/ span 1/ span 1;
 }
 
 .safetyStation {
     grid-area: 7/ 4/ span 1/ span 1;
-}
+} */
 
 /* classes */
 .darkScreen {

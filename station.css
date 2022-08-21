@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Almoni;
+    src: url(assets/fonts/Almoni/almoni-tzar-regular-aaa.otf);
+    font-weight: 500;
+}
+
+html,
+body, #main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  direction: rtl;
+  font-family: "Almoni";
+  font-weight: bold;
+  user-select: none;
+}
+
+#xAndYPage {
+    background-image: url(./assets/media/SVG/xAndYStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
