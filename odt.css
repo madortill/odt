@@ -1,18 +1,18 @@
 @font-face {
     font-family: Almoni;
-    src: url(assets/fonts/Almoni/almoni-tzar-regular-aaa.otf);
+    src: url("./assets/fonts/Almoni/almoni-tzar-regular-aaa.otf");
     font-weight: 500;
 
 }
 @font-face {
     font-family: Almoni;
-    src: url(assets/fonts/Almoni/almoni-tzar-demibold-aaa.otf);
+    src: url("./assets/fonts/Almoni/almoni-tzar-demibold-aaa.otf");
     font-weight: 600;
 }
 
 @font-face {
     font-family: Almoni;
-    src: url(assets/fonts/Almoni/almoni-tzar-bold-aaa.otf);
+    src: url("./assets/fonts/Almoni/almoni-tzar-bold-aaa.otf");
     font-weight: 700;
 }
 
