@@ -2,7 +2,7 @@
 --------------------------------------------------------------
 Description: */
 window.addEventListener("load", () => { 
-    if(window.location.pathname.includes("odt")){
+    if(window.location.pathname === "/odt/odt.html"){
         document.querySelector(".mapButton").addEventListener("click", () => {
             document.querySelector("#home-page").classList.add("hidden")
             document.querySelector("#map-page").classList.remove("hidden")
