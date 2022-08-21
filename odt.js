@@ -19,5 +19,5 @@ window.addEventListener("load", () => {
 Description: */
 const switchHtml = (event) => {
     console.log(event.currentTarget.classList[1])
-    window.location.pathname = `/${event.currentTarget.classList[1]}.html`
+    window.location.pathname = `/odt/${event.currentTarget.classList[1]}.html`
 };

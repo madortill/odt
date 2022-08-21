@@ -2,6 +2,12 @@
     font-family: Almoni;
     src: url(assets/fonts/Almoni/almoni-tzar-regular-aaa.otf);
     font-weight: 500;
+
+}
+@font-face {
+    font-family: Almoni;
+    src: url(assets/fonts/Almoni/almoni-tzar-demibold-aaa.otf);
+    font-weight: 600;
 }
 
 @font-face {
@@ -62,6 +68,10 @@ body, #main {
    width: 50vw;
 }
 
+ol, ul {
+    padding-inline-start: 0;
+}
+
 .stationTitle {
     font-size: 1.4em;
     background: -webkit-linear-gradient(180deg, #85d1f5, #0790d1);
@@ -89,6 +99,7 @@ video {
     width: 80vw;
     top: 55vh;
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 .mapButton  {
