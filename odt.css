@@ -1,18 +1,18 @@
 @font-face {
     font-family: Almoni;
-    src: url("./assets/fonts/Almoni/almoni-tzar-regular-aaa.otf");
+    src: url("./assets/fonts/almoni/almoni-tzar-regular-aaa.otf");
     font-weight: 500;
 
 }
 @font-face {
     font-family: Almoni;
-    src: url("./assets/fonts/Almoni/almoni-tzar-demibold-aaa.otf");
+    src: url("./assets/fonts/almoni/almoni-tzar-demibold-aaa.otf");
     font-weight: 600;
 }
 
 @font-face {
     font-family: Almoni;
-    src: url("./assets/fonts/Almoni/almoni-tzar-bold-aaa.otf");
+    src: url("./assets/fonts/almoni/almoni-tzar-bold-aaa.otf");
     font-weight: 700;
 }
 
@@ -69,7 +69,8 @@ body, #main {
 }
 
 ol, ul {
-    padding-inline-start: 0;
+    padding-inline-start: 1em;
+    direction: rtl;
 }
 
 .stationTitle {
@@ -78,6 +79,7 @@ ol, ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+    direction: rtl;
 }
 
 .questionMark {
@@ -100,6 +102,11 @@ video {
     top: 55vh;
     font-size: 1.1em;
     font-weight: 600;
+    overflow-y: scroll;
+    height: 40vh;
+    direction: ltr;
+    text-align: right;
+    padding-right: 0.6em;
 }
 
 .mapButton  {
@@ -173,6 +180,30 @@ video {
 .safetyStation {
     grid-area: 7/ 4/ span 1/ span 1;
 } */
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e7e7e7; 
+    border-radius: 0.2em;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b2b2b2; 
+    border-radius: 0.2em;
+  }
+
 
 /* classes */
 .darkScreen {
