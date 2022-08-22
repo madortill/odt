@@ -39,14 +39,14 @@ body, #main {
     display: flex;
     align-items: flex-start;
     width: 80vw;
-    top: 55vh;
+    top: 89vw;
     font-size: 1.1em;
     font-weight: 600;
 }
 
 .mapButton  {
     width: 15vw;
-    bottom: 5vh;
+    bottom: 9vw;
 }
 
 /* general */
@@ -133,26 +133,26 @@ body, #main {
 .menuButton {
     width: 9vw;
     position: absolute;
-    top: 2vh;
+    top: 3vw;
     right: 3vw;
 }
 
 .exitButton {
     width: 6vw;
     position: absolute;
-    top: 2vh;
+    top: 3vw;
     right: 3vw;
 }
 
 .title {
-   top: 5vh; 
+   top: 9vw; 
    width: 50vw;
 }
 
 video {
-    top: 16vh;
+    top: 28vw;
     width: 90vw;
-    height: 29vh;
+    height: 51vw;
 }
 
 /* map */
@@ -218,11 +218,11 @@ ol, ul {
 
 .text {
     width: 80vw;
-    top: 49vh;
+    top: 84vw;
     font-size: 1.1em;
     font-weight: 600;
     overflow-y: scroll;
-    height: 43vh;
+    height: 70vw;
     direction: ltr;
     text-align: right;
     padding-right: 0.6em;
@@ -277,7 +277,7 @@ ol, ul {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50vw;
-    height: 9vh;
+    height: 15vw;
     color: white;
     font-size: 1.8em;
     text-align: center;
@@ -288,7 +288,7 @@ ol, ul {
 .exitMenuButton {
     width: 6vw;
     position: absolute;
-    top: 2vh;
+    top: 3vw;
     right: 3vw;
 }
 
