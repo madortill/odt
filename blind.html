@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="odt.css">
+    <script src="odt.js"></script>
+    <title>blind</title>
+</head>
+<body>
+    <!-- menu -->
+    <div class="menuPage hidden">
+        <img class="exitMenuButton" src="./assets/media/SVG/exitButton.svg">
+        <div class="station odt yellowBg menuBg">דף הבית</div>
+        <div class="mapButton blindPage blueBg menuBg">מפת המתחם</div>
+        <div class="station spider redBg menuBg">קורי עכביש</div>
+        <div class="station blind yellowBg menuBg">הולכת עיוור</div>
+        <div class="station keyboard blueBg menuBg">מקלדת</div>
+        <div class="station spiral redBg menuBg">ספירלה</div>
+        <div class="station xAndY yellowBg menuBg">Y & X</div>
+        <div class="station raft blueBg menuBg">רפסודה</div>
+        <div class="station hand redBg menuBg">יד ביד</div>
+    </div>
+
+    <!-- map -->
+    <div id="map-page" class="hidden">
+        <div class="container">
+            <img class="exitButton" src="./assets/media/SVG/exitButton.svg">
+            <img class="title centerX" src="./assets/media/SVG/mapHeadline.svg">
+            <div id="map">
+                <div class="station xAndY xAndYStation"></div>
+                <div class="station keyboard keyboardStation"></div>
+                <div class="station blind blindStation"></div>
+                <div class="station hand handStation"></div>
+                <div class="station raft raftStation"></div>
+                <div class="station spider spiderStation"></div>
+                <div class="station spiral spiralStation"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blind -->
+    <div id="blindPage" class="">
+        <img class="menuButton" src="./assets/media/SVG/menuButton.svg">
+        <div class="container">
+            <img class="title centerX" src="./assets/media/SVG/blindHeadline.svg">
+            <video class="centerX" width="320" height="240" controls>
+                <source src="./assets/media/video/blindStation.mp4" type="video/mp4">
+            </video>
+            <div class="text centerX">
+                <div class="stationTitle">הנחיות לתחנה-</div>
+                <ol>
+                    <li>כל חברי הקבוצה, פרט למוביל, עם עיניים מכוסות</li>
+                    <li>בזמן התכנון מותר לדבר ומותר לגעת.</li>
+                    <li>התכנון יתקיים במקום מרוחק מהתחנה.</li>
+                    <li>בזמן הפעילות אסור לדבר ואסור לגעת (גם לא באמצעות חפץ).</li>
+                    <li>נדרש ציוד - כיסוי עיניים.</li>
+                </ol>
+                <div class="stationTitle">הנחיות מיוחדות-</div>
+                <ul>
+                    <li>לוודא עמידה בהנחיות.</li>
+                    <li>לוודא עמידה בזמנים.</li>
+                    <li>לוודא  השתתפותם של כלל חברי הצוות במשימה.</li>
+                </ul>
+                <div class="stationTitle">תפקיד המנחה-</div>
+                <ol>
+                    <li>יש לשמור על מרחקים בין החיילים ולהיות ערניים וזהירים.</li>
+                    <li>יש להיות ערניים לתנאי הסביבה.</li>
+                    <li>יש לשמור על נהלי השילוב הראוי.</li>
+                    <li>יש לאפשר למנחה לחדול באופן מובהק את הפעילות כאשר נשקפת סכנה בטיחותית.  על ידי משרוקית / סימן מובהק מוגדר מראש).</li>
+                </ol>
+                <div class="stationTitle">שלבי הפעילות-</div>
+                <div class="yellow">שלב 1 - הסבר על התחנה מצד המדריך</div>
+                <div>
+                    אמור למשתתפים - המטרה שלכם היא שחברי הקבוצה יעברו במסלול המסומן בין המכשולים. הסבר למשתתפים את הנחיות התחנה שפורטו למעלה. שים לב עליך להגדיר חבר קבוצה אחד מכל קבוצה שיוביל.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 2 - זמן תכנון</div>
+                <div>
+                    יקרה במקום מרוחק מהתחנה לפני שהמשתתפים רואים אותה.
+                    <br>כ – 7 דקות
+                </div>
+                <div class="red">שלב 3 - הזנקה ותחילת מסלול</div>
+                <div>
+                    הזנקת הקבוצות למעבר מסלול המכשולים.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="yellow">שלב 4 - זמן תכנון (2)</div>
+                <div>
+                    תכנון נוסף לאחר שכבר התנסו פעם אחת במסלול.
+                    <br>כ – 7 דקות
+                </div>
+                <div class="blue">שלב 5 - הזנקה ותחילת מסלול (2)</div>
+                <div>
+                    הזנקת הקבוצות למעבר מסלול המכשולים בפעם השנייה, באמצע המסלול - בצעו החלפת מוביל.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="red">שלב 6 – זמן תכנון (3)</div>
+                <div>
+                    תכנון נוסף לאחר שכבר התנסו פעם שנייה במסלול.
+                    <br>כ – 7 דקות
+                </div>
+                <div class="yellow">שלב 7 – הזנקה ותחילת מסלול (3)</div>
+                <div>
+                    הזנקת הקבוצות למעבר מסלול המכשולים בפעם השלישית, באמצע המסלול - בצעו החלפת מוביל.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 8 – עיבוד</div>
+                <div>
+                    תהליך העיבוד של הקבוצה לאחר ביצוע המשימה.
+                    <br>כ – 30 דקות
+                </div>
+                <div class="stationTitle">שלב עיבוד-</div>
+                <ul>
+                    <li>
+                        <div class="bold">פתיחה</div>
+                        <div>
+                            שאל את הצוות - איך היה לכם בפעילות?
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">גוף</div>
+                        <div>
+                            שאל את הצוות את השאלות הבאות :
+                            <br>- באיזו מידה השגתם את מטרתכם?
+                            <br>- מה קידם את השגת המטרה? ומה עיכב אתכם בהשגת המטרה?
+                            <br>- איך הייתה האווירה בזמן הפעילות?
+                            <br>- מה הכי תרם לדעתכם להצלחת המשימה?
+                            <br>- מה הייתה חשיבות שלב התכנון עבורכם?
+                            <br>שאל את הממשבים :
+                            <br>- איך זה הרגיש?
+                            <br>- איך הייתה התחושה בצוות תחת הובלתו של המנהיג?
+                            <br>שאל את הצוות :
+                            <br>- איזה סגנונות מנהיגות עלו? הכוון אותם לדבר על מנהיגות ברמת הצוות ועל מנהיגות בפרט.
+                            <br>- מה החסרונות ומה היתרונות של כל סגנון?
+                            <br>המסר- יש מגוון סגנונות של מנהיגות וכולם טובים, חשוב להכיר כמה שיותר סגנונות של מנת 
+                            <br>להוביל בגמישות, בהתאם למשימה, למובלים וחלסגנון האישי שלהם.
+                            <br>האנשים והצוותים שלכם הם המפתח להצלחה שלכם.                                                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">סיכום</div>
+                        <div>
+                            שאל את הצוות - מה התחדד לכם ליום שלכם בעקבות הפעילות?
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

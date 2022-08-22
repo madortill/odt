@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="odt.css">
+    <script src="odt.js"></script>
+    <title>keyboard</title>
+</head>
+<body>
+    <!-- menu -->
+    <div class="menuPage hidden">
+        <img class="exitMenuButton" src="./assets/media/SVG/exitButton.svg">
+        <div class="station odt yellowBg menuBg">דף הבית</div>
+        <div class="mapButton keyboardPage blueBg menuBg">מפת המתחם</div>
+        <div class="station spider redBg menuBg">קורי עכביש</div>
+        <div class="station blind yellowBg menuBg">הולכת עיוור</div>
+        <div class="station keyboard blueBg menuBg">מקלדת</div>
+        <div class="station spiral redBg menuBg">ספירלה</div>
+        <div class="station xAndY yellowBg menuBg">Y & X</div>
+        <div class="station raft blueBg menuBg">רפסודה</div>
+        <div class="station hand redBg menuBg">יד ביד</div>
+    </div>
+
+    <!-- map -->
+    <div id="map-page" class="hidden">
+        <div class="container">
+            <img class="exitButton" src="./assets/media/SVG/exitButton.svg">
+            <img class="title centerX" src="./assets/media/SVG/mapHeadline.svg">
+            <div id="map">
+                <div class="station xAndY xAndYStation"></div>
+                <div class="station keyboard keyboardStation"></div>
+                <div class="station blind blindStation"></div>
+                <div class="station hand handStation"></div>
+                <div class="station raft raftStation"></div>
+                <div class="station spider spiderStation"></div>
+                <div class="station spiral spiralStation"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- keyboard -->
+    <div id="keyboardPage" class="">
+        <img class="menuButton" src="./assets/media/SVG/menuButton.svg">
+        <div class="container">
+            <img class="title centerX" src="./assets/media/SVG/keyboardHeadline.svg">
+            <video class="centerX" width="320" height="240" controls>
+                <source src="./assets/media/video/keyboardStation.mp4" type="video/mp4">
+            </video>
+            <div class="text centerX">
+                <div class="stationTitle">הנחיות לתחנה-</div>
+                <ol>
+                    <li>הגבלת זמן - זמן גג לסבב הינו 3 דק’.</li>
+                    <li>למשתתף אין זכות לגעת ברצף בשני מספרים במעגל במידה ועוברים על אחת ההנחיות מתחילים את הספירה מחדש. </li>
+                    <li>בתוך המעגל בכל נק’ זמן יכול להיות רק חבר קבוצה אחד.</li>
+                    <li>בשלב ה-3 יש להנחות לחניכים לבצע את המשימה מההתחלה בלי לדבר.</li>
+                </ol>
+                <div class="stationTitle">תפקיד המנחה-</div>
+                <ul>
+                    <li>לוודא עמידה בהנחיות.</li>
+                    <li>מדידת זמן ווידוא עמידה במגבלה של זמן.</li>
+                    <li>לאחר 10 דק’ להנחות את החניכים לבצע את המשימה מבלי לדבר.</li>
+                </ul>
+                <div class="stationTitle">הנחיות מיוחדות-</div>
+                <ol>
+                    <li>יש לגלות ערנות מרובה בזמן הפעילות לכלל המשתתפים.</li>
+                    <li>יש להיזהר בזמן הקפיצה וללא דברים בידיים.</li>
+                    <li>יש להיות עירניים לתנאי הסביבה.</li>
+                </ol>
+                <div class="stationTitle">שלבי הפעילות-</div>
+                <div class="yellow">שלב 1 - הסבר על התחנה מצד המדריך</div>
+                <div>
+                    אמור למשתתפים - המטרה שלכם היא שחברי הקבוצה יגעו במספרים בסדר עולה מ 1-50. הסבר שבתוך המעגל בכל נקודת זמן יכול להיות רק חבר קבוצה אחד, ושלמשתתף אין זכות לגעת בשני מספרים ברצף.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 2 - הזנקה ותחילת מסלול</div>
+                <div>
+                    ביצוע המשימה ללא תכנון מראש.
+                    <br>כ – 3 דקות
+                </div>
+                <div class="red">שלב 3 - זמן תכנון</div>
+                <div>
+                    זמן מוגדר ליצירת אסטרטגיה.
+                    <br>כ – 3 דקות
+                </div>
+                <div class="yellow">שלב 4 - הזנקה ותחילת מסלול (2)</div>
+                <div>
+                    ביצוע המשימה לאחר שכבר התנסו פעם אחת במסלול ויצרו אסטרטגיה.
+                    <br>כ – 3 דקות
+                </div>
+                <div class="blue">שלב 5 - זמן תכנון (2)</div>
+                <div>
+                    להנחות כי אסור לדבר במהלך הסבב הקרוב.
+                    <br>כ – 3 דקות
+                </div>
+                <div class="red">שלב 6 – הזנקה ותחילת מסלול (3)</div>
+                <div>
+                    ביצוע המשימה לאחר שכבר התנסו פעמיים במסלול ומבלי לדבר.
+                    <br>כ – 3 דקות
+                </div>
+                <div class="yellow">שלב 7 – עיבוד</div>
+                <div>
+                    תהליך העיבוד של הקבוצה לאחר ביצוע המשימה.
+                    <br>כ – 30 דקות
+                </div>
+                <div class="stationTitle">שלב עיבוד-</div>
+                <ul>
+                    <li>
+                        <div class="bold">פתיחה</div>
+                        <div>
+                            שאל את הצוות - איך היה לכם בפעילות?
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">גוף</div>
+                        <div>
+                            שאל את הצוות את השאלות הבאות :
+                            <br>- באיזו מידה עמדתם במשימה? דרגו על ידי מספר מ 1-10  
+                            <br>- מי שנתן ציון גבוה - בזכות מה עמדתם במשימה? מה קידם את השגת המטרה?
+                            <br>- מי שנתן ציון נמוך - מה עיכב אותנו/ מנע מאיתנו עמידה טובה יותר במשימה?
+                            <br>- איך השפיע התכנון על ביצוע המשימה, לעומת הסיבוב ללא זמן התכנון?
+                            <br>- האם היה מנהיג בפעילות?
+                            <br>הבא דוגמאות מהנתונים שאספת במהלך הסדנא - אמירות שנאמרו.
+                            <br>הבא דוגמאות אישיות ודילמות פיקודיות מתפקידך כמפקד שקשורות לעבודת צוות.
+                            <br>חלק לצוות מאפיינים של עבודת צות אפקטיבית, בקש מהם לבחור מתוך הרשימה 2/3 מאפיינים שאם נשפר אותם נשפר את עבודת הצוות באופן מיטבי.
+                            <br>הסבר לצוות מאפיינים של עבודת צוות :
+                            <br>- תקשורת פתוחה בין כל חברי הצוות.
+                            <br>- מטרות הצוות וסדרי העדיפויות ברורים וידועים לכל חברי הצוות.
+                            <br>- הצוות מטפל בקונפליקטים בצורה גלויה ויעילה.
+                            <br>- קיימת מעורבות ופעילות גבוהה של חברי הצוות בתכנון וביצוע העבודה.
+                            <br>- קיימים שיתוף פעולה ועזרה הדדית בין חברי הצוות.
+                            <br>- הצוות מנצל את הכישורים האישיים של כל אחד מחבריו.
+                            <br>- מפקד הצוות מכוון ומניע את עבודת הצוות ומשמש דוגמא אישית.
+                            <br>- האווירה בצוות חופשית ומכבדת הבדלים אישיים.
+                            <br>- ניתנת צומת לב מספקת לצרכים אישיים ומקצועיים של חברי הצוות.
+                            <br>מאפיינים אלו הם היעדים של הצוות בתקופה שלהם יחד.
+                            <br>חשבו עם הצוות:
+                            <br>- על רעיונות פרקטיים איך להשתפר כצוות (מה יוכלו לעשות יחד בסוף תקופה?).                                                                        
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">סיכום</div>
+                        <div>
+                            שאל את הצוות - מה התחדד לכם ליום יום שלכם בעקבות הפעילות?
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

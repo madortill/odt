@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="odt.css">
+    <script src="odt.js"></script>
+    <title>raft</title>
+</head>
+<body>
+    <!-- menu -->
+    <div class="menuPage hidden">
+        <img class="exitMenuButton" src="./assets/media/SVG/exitButton.svg">
+        <div class="station odt yellowBg menuBg">דף הבית</div>
+        <div class="mapButton raftPage blueBg menuBg">מפת המתחם</div>
+        <div class="station spider redBg menuBg">קורי עכביש</div>
+        <div class="station blind yellowBg menuBg">הולכת עיוור</div>
+        <div class="station keyboard blueBg menuBg">מקלדת</div>
+        <div class="station spiral redBg menuBg">ספירלה</div>
+        <div class="station xAndY yellowBg menuBg">Y & X</div>
+        <div class="station raft blueBg menuBg">רפסודה</div>
+        <div class="station hand redBg menuBg">יד ביד</div>
+    </div>
+
+    <!-- map -->
+    <div id="map-page" class="hidden">
+        <div class="container">
+            <img class="exitButton" src="./assets/media/SVG/exitButton.svg">
+            <img class="title centerX" src="./assets/media/SVG/mapHeadline.svg">
+            <div id="map">
+                <div class="station xAndY xAndYStation"></div>
+                <div class="station keyboard keyboardStation"></div>
+                <div class="station blind blindStation"></div>
+                <div class="station hand handStation"></div>
+                <div class="station raft raftStation"></div>
+                <div class="station spider spiderStation"></div>
+                <div class="station spiral spiralStation"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- raft -->
+    <div id="raftPage" class="">
+        <img class="menuButton" src="./assets/media/SVG/menuButton.svg">
+        <div class="container">
+            <img class="title centerX" src="./assets/media/SVG/raftHeadline.svg">
+            <video class="centerX" width="320" height="240" controls>
+                <source src="./assets/media/video/raftStation.mp4" type="video/mp4">
+            </video>
+            <div class="text centerX">
+                <div class="stationTitle">הנחיות לתחנה-</div>
+                <ol>
+                    <li>על המשתתפים לעמוד בו זמנית על המתקן.</li>
+                    <li>חל איסור על המשתתפים לגעת באדמה בשום צורה. </li>
+                    <li> ההצלחה בתחנה - אסור לצידי הרספודה לגעת באדמה למשך 30 שניות ברצף.</li>
+                    <li>רעיונות להתקלות - עצימת עיניים.</li>
+                </ol>
+                <div class="stationTitle">תפקיד המנחה-</div>
+                <ul>
+                    <li>לוודא עמידה בהנחיות.</li>
+                    <li>לוודא עמידה בזמנים.</li>
+                    <li>לוודא בטיחות.</li>
+                    <li>לוודא את השתתפותם של כלל חברי הצוות במשימה.</li>
+                    <li>לוודא עמידה בפקודות השילוב הראוי.</li>
+                </ul>
+                <div class="stationTitle">שלבי הפעילות-</div>
+                <div class="yellow">שלב 1 - הסבר על התחנה מצד המדריך</div>
+                <div>
+                    אמור למשתתפים - המטרה שלכם היא לעמוד על הרפסודה ולייצר יציבות שלה למשך 30 שניות. הסבר למשתתפים שעל כולם לעמוד בו זמנית על המתקן. חל איסור על המשתתפים לגעת באדמה בשום צורה שהיא.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 2 - זמן תכנון</div>
+                <div>
+                    תכנון המתקן, על הקבוצה לתכנן איך הביצוע יהיה.
+                    <br>כ – 4 דקות
+                </div>
+                <div class="red">שלב 3 - הזנקה ותחילת מסלול</div>
+                <div>
+                    הזנקת הקבוצה, תחילת המשימה.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="yellow">שלב 4 - זמן תכנון (2)</div>
+                <div>
+                    תכנון נוסף לאחר שכבר התנסו פעם אחת , התקלת הקבוצה - ביצוע המשימה בעיניים עצומות.
+                    <br>כ – 1 דקות
+                </div>
+                <div class="blue">שלב 5 - הזנקה ותחילת מסלול (2)</div>
+                <div>
+                    הזנקת הקבוצה בפעם השניה, הפעם שהקבוצה בעיניים עצומות.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="red">שלב 6 – עיבוד</div>
+                <div>
+                    תהליך העיבוד של הקבוצה לאחר ביצוע המשימה.
+                    <br>כ – 15 דקות
+                </div>
+                <div class="stationTitle">שלב עיבוד-</div>
+                <ul>
+                    <li>
+                        <div class="bold">פתיחה</div>
+                        <div>
+                            שאל את הצוות - איך היה לכם בפעילות?
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">גוף</div>
+                        <div>
+                            שאל את הצוות את השאלות הבאות :
+                            <br>- באיזו מידה עמדתם במשימה? דרגו על ידי מספר מ 1-10.
+                            <br>- מי שנתן ציון גבוה - בזכות מה עמדתם במשימה? מה קידם את השגת המטרה?
+                            <br>- מי שנתן ציון נמוך - מה עיכב אותנו/ מנע מאיתנו עמידה טובה יותר במשימה?
+                            <br>- איך השפיע התכנון על ביצוע המשימה, לעומת הסיבוב ללא זמן התכנון?
+                            <br>- האם היה מנהיג בפעילות?
+                            <br>הבא דוגמאות מהנתונים שאספת במהלך הסדנא - אמירות שנאמרו.
+                            <br>הבא דוגמאות אישיות ודילמות פיקודיות מתפקידך כמפקד שקשורות לעבודת צוות.                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">סיכום</div>
+                        <div>
+                            שאל את הצוות - מה התחדד לכם ליום יום שלכם בעקבות הפעילות?              
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -29,6 +29,27 @@ body, #main {
   user-select: none;
 }
 
+/* mainPage */
+.questionMark {
+    width: 4vw;
+    padding-left: 0.3em;
+}
+
+.textHomePage {
+    display: flex;
+    align-items: flex-start;
+    width: 80vw;
+    top: 55vh;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.mapButton  {
+    width: 15vw;
+    bottom: 5vh;
+}
+
+/* general */
 #home-page, #map-page {
     background-image: url(./assets/media/SVG/bgMain.svg);
     background-repeat: no-repeat;
@@ -41,6 +62,66 @@ body, #main {
 
 #xAndYPage {
     background-image: url(./assets/media/SVG/xAndYStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#blindPage {
+    background-image: url(./assets/media/SVG/blindStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#spiderPage {
+    background-image: url(./assets/media/SVG/spiderStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#keyboardPage {
+    background-image: url(./assets/media/SVG/keyboardStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#spiralPage {
+    background-image: url(./assets/media/SVG/spiralStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#raftPage {
+    background-image: url(./assets/media/SVG/raftStationBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#handPage {
+    background-image: url(./assets/media/SVG/handStationBg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -68,52 +149,13 @@ body, #main {
    width: 50vw;
 }
 
-ol, ul {
-    padding-inline-start: 1em;
-    direction: rtl;
-}
-
-.stationTitle {
-    font-size: 1.4em;
-    background: -webkit-linear-gradient(180deg, #85d1f5, #0790d1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    direction: rtl;
-}
-
-.questionMark {
-    width: 4vw;
-    padding-left: 0.3em;
-}
-
-.textHomePage {
-    display: flex;
-    align-items: flex-start;
-}
-
 video {
-    top: 15vh;
+    top: 16vh;
     width: 90vw;
+    height: 29vh;
 }
 
-.text {
-    width: 80vw;
-    top: 55vh;
-    font-size: 1.1em;
-    font-weight: 600;
-    overflow-y: scroll;
-    height: 40vh;
-    direction: ltr;
-    text-align: right;
-    padding-right: 0.6em;
-}
-
-.mapButton  {
-    width: 15vw;
-    bottom: 5vh;
-}
-
+/* map */
 #map {
     background-image: url(./assets/media/SVG/map.svg);
     background-repeat: no-repeat;
@@ -129,25 +171,10 @@ video {
     grid-template-rows: 2.3fr 0.95fr 0.95fr 1.1fr 0.7fr 1.05fr 0.95fr 1.6fr;
 }
 
-.station {
-    /* background-color: #40b2a7; */
-}
-
+/* stations */
 .xAndYStation {
     grid-area: 2/ 2/ span 1/ span 1;
 }
-
-/* .ProcessingStation1 {
-    grid-area: 2/ 4/ span 1/ span 1;
-}
-
-.ProcessingStation2 {
-    grid-area: 6/ 5/ span 1/ span 1;
-}
-
-.ProcessingStation3 {
-    grid-area: 7/ 5/ span 1/ span 1;
-} */
 
 .keyboardStation {
     grid-area: 3/ 2/ span 1/ span 1;
@@ -173,39 +200,124 @@ video {
     grid-area: 6/ 4/ span 1/ span 1;
 }
 
-/* .welcomeStation {
-    grid-area: 7/ 2/ span 1/ span 1;
+ol, ul {
+    padding-inline-start: 1em;
+    direction: rtl;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
-.safetyStation {
-    grid-area: 7/ 4/ span 1/ span 1;
-} */
+.stationTitle {
+    font-size: 1.4em;
+    background: -webkit-linear-gradient(180deg, #85d1f5, #0790d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    direction: rtl;
+}
 
+.text {
+    width: 80vw;
+    top: 49vh;
+    font-size: 1.1em;
+    font-weight: 600;
+    overflow-y: scroll;
+    height: 43vh;
+    direction: ltr;
+    text-align: right;
+    padding-right: 0.6em;
+}
 
+.text > div {
+    direction: rtl;
+}
 
+.yellow {
+    color: #edda9d;
+    text-shadow: -0.2px 0.5px #f7b173;
+    font-size: 1.2em;
+}
 
+.blue {
+    color: #7fcad2;
+    text-shadow: -0.2px 0.5px #40b2a7;
+    font-size: 1.2em;
+}
 
+.red {
+    color: #f29597;
+    text-shadow: -0.2px 0.5px #ee726d;
+    font-size: 1.2em;
+}
+
+/* menu */
+.menuPage {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    width: 50vw;
+    background-color: #dcf0f9;
+}
+
+.blueBg {
+    background-image: url("./assets/media/SVG/blueBg.svg");
+}
+
+.redBg {
+    background-image: url("./assets/media/SVG/redBg.svg");
+}
+
+.yellowBg {
+    background-image: url("./assets/media/SVG/yellowBg.svg");
+}
+
+.menuBg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 9vh;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 2;
+    margin-top: 0.2em;
+}
+
+.exitMenuButton {
+    width: 6vw;
+    position: absolute;
+    top: 2vh;
+    right: 3vw;
+}
+
+.menuPage .odt {
+    margin-top: 1.7em;
+}
+
+/* scrollBar */
 
 /* width */
 ::-webkit-scrollbar {
     width: 0.5em;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #e7e7e7; 
     border-radius: 0.2em;
 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #b2b2b2; 
     border-radius: 0.2em;
-  }
+}
 
 
-/* classes */
+/* tools */
 .darkScreen {
     position: fixed;
     top: 0;
@@ -240,6 +352,7 @@ video {
 
 .bold {
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .hidden {

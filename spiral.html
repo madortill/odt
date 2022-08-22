@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="odt.css">
+    <script src="odt.js"></script>
+    <title>spiral</title>
+</head>
+<body>
+    <!-- menu -->
+    <div class="menuPage hidden">
+        <img class="exitMenuButton" src="./assets/media/SVG/exitButton.svg">
+        <div class="station odt yellowBg menuBg">דף הבית</div>
+        <div class="mapButton spiralPage blueBg menuBg">מפת המתחם</div>
+        <div class="station spider redBg menuBg">קורי עכביש</div>
+        <div class="station blind yellowBg menuBg">הולכת עיוור</div>
+        <div class="station keyboard blueBg menuBg">מקלדת</div>
+        <div class="station spiral redBg menuBg">ספירלה</div>
+        <div class="station xAndY yellowBg menuBg">Y & X</div>
+        <div class="station raft blueBg menuBg">רפסודה</div>
+        <div class="station hand redBg menuBg">יד ביד</div>
+    </div>
+
+    <!-- map -->
+    <div id="map-page" class="hidden">
+        <div class="container">
+            <img class="exitButton" src="./assets/media/SVG/exitButton.svg">
+            <img class="title centerX" src="./assets/media/SVG/mapHeadline.svg">
+            <div id="map">
+                <div class="station xAndY xAndYStation"></div>
+                <div class="station keyboard keyboardStation"></div>
+                <div class="station blind blindStation"></div>
+                <div class="station hand handStation"></div>
+                <div class="station raft raftStation"></div>
+                <div class="station spider spiderStation"></div>
+                <div class="station spiral spiralStation"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- spiral -->
+    <div id="spiralPage" class="">
+        <img class="menuButton" src="./assets/media/SVG/menuButton.svg">
+        <div class="container">
+            <img class="title centerX" src="./assets/media/SVG/spiralHeadline.svg">
+            <video class="centerX" width="320" height="240" controls>
+                <source src="./assets/media/video/spiralStation.mp4" type="video/mp4">
+            </video>
+            <div class="text centerX">
+                <div class="stationTitle">הנחיות לתחנה-</div>
+                <ol>
+                    <li>אין לגעת במקל שלא בעזרת החוטים.</li>
+                    <li>על המקל להישאר ישר ולא להתנתק מהרצפה. </li>
+                    <li>אסור למקל לגעת בקווי הספירלה (הסימונים הלבנים).</li>
+                    <li>אם אחד מהתנאים מופר - התרגיל נכשל ומתחילים מההתחלה.</li>
+                    <li>ניתן לבחור משתתף שיתצפת על המשימה וכך יוכל לומר בעיבוד מה קרה באופן אובייקטיבי.</li>
+                </ol>
+                <div class="stationTitle">אופציות לשדרוג המשימה-</div>
+                <ul>
+                    <li>איסור על דיבור, להגדיר שהמוט נדרש להיות אנכי (90 מעלות) בלבד, </li>
+                    <li>לבקש מכמה שיעשו את המשימה בעיניים עצומות וזה שמימינם ינחה אותם לאן למשוך את החוט,</li>
+                    <li>מגבלה של זמן, ניתן לאתגר ולשדרג את המשימה ע”פ המצב בשטח, לתת לאחד להוביל.</li>
+                </ul>
+                <div class="stationTitle">תפקיד המנחה-</div>
+                <ul>
+                    <li>לוודא עמידה בהנחיות.</li>
+                    <li>לבחון את תהליך התכנון והביצוע.</li>
+                    <li>לודא השתתפותם של כלל חברי הצוות במשימה.</li>
+                    <li>לתת הנחיות והוראות במהלך הפעילות.</li>
+                </ul>
+                <div class="stationTitle">הנחיות מיוחדות-</div>
+                <ul>
+                    <li>יש להיות ערניים לתנאי הסביבה.</li>
+                </ul>
+                <div class="stationTitle">שלבי הפעילות-</div>
+                <div class="yellow">שלב 1 - הסבר על התחנה מצד המדריך</div>
+                <div>
+                    אמור למשתתפים - המטרה שלכם היא להעביר את המקל ממרכז הספירלה החוצה מבלי שהוא יגע בקווים המסומנים ומבלי להרים את המקל לאוויר. במידה ואחד הכללים מופר - מתחילים מההתחלה.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 2 - זמן תכנון</div>
+                <div>
+                    עמידת מוצא - כל משתתף מחזיק בקצה של חבל והמנחה מעמיד את מקל המטאטא באמצע כאשר הקצה נוגע ברצפה.
+                    <br>כ – 3 דקות
+                </div>
+                <div class="red">שלב 3 - הזנקה ותחילת מסלול</div>
+                <div>
+                    הזנקת הקבוצה - תחילת הפעילות.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="yellow">שלב 4 - זמן תכנון (2)</div>
+                <div>
+                    העלאת רמת הקושי - המנחה מזניק את התרגיל על ידי עזיבת המקל.
+                    <br>כ – 2 דקות
+                </div>
+                <div class="blue">שלב 5 - הזנקה ותחילת מסלול (2)</div>
+                <div>
+                    הזנקת הקבוצה - תחילת הפעילות בפעם השנייה לאחר שדרגת הקושי עלתה.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="red">שלב 6 – עיבוד</div>
+                <div>
+                    תהליך העיבוד של הקבוצה לאחר ביצוע המשימה.
+                    <br>כ – 30 דקות
+                </div>
+                <div class="stationTitle">שלב עיבוד-</div>
+                <ul>
+                    <li>
+                        <div class="bold">פתיחה</div>
+                        <div>
+                            שאל את הצוות - איך היה לכם בפעילות?
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">גוף</div>
+                        <div>
+                            שאל את הצוות את השאלות הבאות :
+                            <br>- באיזו מידה עמדתם במשימה? דרגו על ידי מספר מ 1-10  
+                            <br>- מי שנתן ציון גבוה - בזכות מה עמדתם במשימה? מה קידם את השגת המטרה?
+                            <br>- מי שנתן ציון נמוך - מה עיכב אותנו/ מנע מאיתנו עמידה טובה יותר במשימה?
+                            <br>- איך השפיע התכנון על ביצוע המשימה, לעומת הסיבוב ללא זמן התכנון?
+                            <br>- האם היה מנהיג בפעילות?
+                            <br>הבא דוגמאות מהנתונים שאספת במהלך הסדנא - אמירות שנאמרו.
+                            <br>הבא דוגמאות אישיות ודילמות פיקודיות מתפקידך כמפקד שקשורות לעבודת צוות.
+                            <br>חלק לצוות מאפיינים של עבודת צות אפקטיבית, בקש מהם לבחור מתוך הרשימה 2/3 מאפיינים שאם נשפר אותם נשפר את עבודת הצוות באופן מיטבי.
+                            <br>הסבר לצוות מאפיינים של עבודת צוות :
+                            <br>- תקשורת פתוחה בין כל חברי הצוות.
+                            <br>- מטרות הצוות וסדרי העדיפויות ברורים וידועים לכל חברי הצוות.
+                            <br>- הצוות מטפל בקונפליקטים בצורה גלויה ויעילה.
+                            <br>- קיימת מעורבות ופעילות גבוהה של חברי הצוות בתכנון וביצוע העבודה.
+                            <br>- קיימים שיתוף פעולה ועזרה הדדית בין חברי הצוות.
+                            <br>- הצוות מנצל את הכישורים האישיים של כל אחד מחבריו.
+                            <br>- מפקד הצוות מכוון ומניע את עבודת הצוות ומשמש דוגמא אישית.
+                            <br>- האווירה בצוות חופשית ומכבדת הבדלים אישיים.
+                            <br>- ניתנת צומת לב מספקת לצרכים אישיים ומקצועיים של חברי הצוות.
+                            <br>מאפיינים אלו הם היעדים של הצוות בתקופה שלהם יחד.
+                            <br>חשבו עם הצוות:
+                            <br>- על רעיונות פרקטיים איך להשתפר כצוות (מה יוכלו לעשות יחד בסוף תקופה?).                                                                          
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">סיכום</div>
+                        <div>
+                            שאל את הצוות - מה התחדד לכם ליום יום שלכם בעקבות הפעילות?              
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

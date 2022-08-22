@@ -9,6 +9,37 @@
     <title>xAndY</title>
 </head>
 <body>
+    <!-- menu -->
+    <div class="menuPage hidden">
+        <img class="exitMenuButton" src="./assets/media/SVG/exitButton.svg">
+        <div class="station odt yellowBg menuBg">דף הבית</div>
+        <div class="mapButton xAndYPage blueBg menuBg">מפת המתחם</div>
+        <div class="station spider redBg menuBg">קורי עכביש</div>
+        <div class="station blind yellowBg menuBg">הולכת עיוור</div>
+        <div class="station keyboard blueBg menuBg">מקלדת</div>
+        <div class="station spiral redBg menuBg">ספירלה</div>
+        <div class="station xAndY yellowBg menuBg">Y & X</div>
+        <div class="station raft blueBg menuBg">רפסודה</div>
+        <div class="station hand redBg menuBg">יד ביד</div>
+    </div>
+
+    <!-- map -->
+    <div id="map-page" class="hidden">
+        <div class="container">
+            <img class="exitButton" src="./assets/media/SVG/exitButton.svg">
+            <img class="title centerX" src="./assets/media/SVG/mapHeadline.svg">
+            <div id="map">
+                <div class="station xAndY xAndYStation"></div>
+                <div class="station keyboard keyboardStation"></div>
+                <div class="station blind blindStation"></div>
+                <div class="station hand handStation"></div>
+                <div class="station raft raftStation"></div>
+                <div class="station spider spiderStation"></div>
+                <div class="station spiral spiralStation"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- xAndY -->
     <div id="xAndYPage" class="">
         <img class="menuButton" src="./assets/media/SVG/menuButton.svg">
@@ -18,12 +49,94 @@
                 <source src="./assets/media/video/xAndYStation.mp4" type="video/mp4">
             </video>
             <div class="text centerX">
-                <div class="stationTitle">תיאור הפעילות</div>
+                <div class="stationTitle">תיאור הפעילות-</div>
                 <ol>
                     <li>בכל סיבוב (סה”כ 7) המשתתפים יכולים להתייעץ חצי דקה ואז עליהם להציג את הבחירה שלהם באותו הזמן.</li>
                     <li>הצוות מרוויח או מפסיד ניקוד בהתאם לטבלה הבאה (טבלת הניקוד וטבלה לתיעוד הניקוד קיימות פיזית בתחנה).</li>
                 </ol>
                 <img src="./assets/media/SVG/xAndYTable.svg">
+                <div class="stationTitle">תפקיד המנחה-</div>
+                <ul>
+                    <li>לוודא עמידה בהנחיות ובזמנים.</li>
+                    <li>לבחון את תהליך התכנון והביצוע.</li>
+                    <li>לתת הנחיות והוראות במהלך הפעילות.</li>
+                    <li>לבצע חישוב של הניקוד.</li>
+                    <li>לשים לב שכל חברי הקבוצות משתתפים ולא רק אחד בכל קבוצה מקבל החלטות.</li>
+                </ul>
+                <div class="stationTitle">שלבי הפעילות-</div>
+                <div class="yellow">שלב 1 - הסבר על התחנה מצד המדריך</div>
+                <div>
+                    אמור למשתתפים - המטרה שלכם היא להרוויח כמה שיותר עבור הקבוצה, הצוות מתחלק ל4 קבוצות. לכל קבוצה יש 2 אופציות האחד X והשני Y. המשימה מתבצעת בסיבובי משחק ועל הצוות להתייעץ, לבחור ובהתאם, לקבל ניקוד משותף.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 2 - זמן תכנון</div>
+                <div>
+                    חלוקה ל – 4 קבוצות
+                    <br>כ – 3 דקות
+                </div>
+                <div class="red">שלב 3 - הזנקה ותחילת מסלול</div>
+                <div>
+                    מתן 30 שניות להתייעצות והצגת הבחירה הקבוצתית במקביל. לחזור על כך 7 פעמים.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="yellow">שלב 4 - זמן תכנון (2)</div>
+                <div>
+                    החלפת הקבוצות חלוקה מחדש ל - 4 קבוצות.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="blue">שלב 5 - הזנקה ותחילת מסלול (2)</div>
+                <div>
+                    מתן 30 שניות להתייעצות והצגת הבחירה הקבוצתית במקביל. לחזור על כך 7 פעמים.
+                    <br>כ – 5 דקות
+                </div>
+                <div class="red">שלב 6 – עיבוד</div>
+                <div>
+                    תהליך העיבוד של הקבוצה לאחר ביצוע המשימה.
+                    <br>כ – 15 דקות
+                </div>
+                <div class="stationTitle">שלב עיבוד-</div>
+                <ul>
+                    <li>
+                        <div class="bold">פתיחה</div>
+                        <div>
+                            שאל את הצוות : 
+                            <br>- איך היה לכם בפעילות?
+                            <br>- אתם מרוצים מהצורה שהתנהלתם?
+                            <br>-אתם חושבים שהשגתם את מטרתכם?
+                            <br>- מה קידם את השגת המטרה? (או מה לא)
+                            <br>- האם היה שת”פ למול עבודה אישית?
+                            <br>- איך הייתה האווירה בזמן התרגיל?
+                            <br>- האם הייתה חלוקת תפקידים? האם היא קידמה / בלמה / במה?
+                            <br>- מה הכי תרם לדעתך להצלחת המשימה?
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">גוף</div>
+                        <div>
+                            שאל את הצוות את השאלות הבאות :
+                           <br> - מה היא ההגדרה לצוות לדעתכם?
+                           <br> (צוות הוא קבוצה של אנשים התלויים זה בזה במידה רבה, מתוך כוונה להשיג מטרה משותפת
+                           <br>  ומתוך הסכמה שהדרך היחידה להשגת המטרה היא באמצעות עבודת צוות.)
+                           <br> - האם הם רואים או מחשיבים את עצמם כצוות?
+                           <br> - האם קיימות להם מטרות משותפות?
+                           <br> - האם לדעתם הם תלויים אחד בשני?
+                           <br> שאל את הממשבים :
+                           <br> - מהי עבודת צוות
+                           <br> - האם העבודת צוות הועילה להם בסדנא?
+                           <br> - אם היו פועלים לבד האם היו עושים זאת מהר יותר, טוב יותר?
+                           <br> - אילו יתרונות יש בתחרות?
+                           <br> - אילו חסרונות יש לתחרות בקבוצה?
+                           <br> הבא דוגמאות מהנתונים שאספת במהלך הסדנא אמירות שנאמרו, האם עמדו ביעד שלהם?                             
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bold">סיכום</div>
+                        <div>
+                            לסיום עליך לבצע חיבור של הסדנא אל התפקיד, אל שגרת היום יום של אנשיך,
+                            הדגש את השיבות עבודת הצוות בתפקידם ובכללי במסגרת הצבאית.                                               
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
