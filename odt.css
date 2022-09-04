@@ -180,8 +180,12 @@ video {
     grid-area: 3/ 2/ span 1/ span 1;
 }
 
-.blindStation {
-    grid-area: 3/ 4/ span 2/ span 1;
+.blindStation1 {
+    grid-area: 3/ 4/ span 1/ span 1;
+}
+
+.blindStation2 {
+    grid-area: 5/ 4/ span 1/ span 1;
 }
 
 .handStation {
@@ -189,7 +193,7 @@ video {
 }
 
 .raftStation {
-    grid-area: 5/ 4/ span 1/ span 2;
+    grid-area: 4/ 4/ span 1/ span 2;
 }
 
 .spiderStation {
@@ -275,7 +279,7 @@ ol, ul {
     text-align: center;
     line-height: 1.7;
     margin-top: 0.3em;
-    background: linear-gradient(270deg, #80c7e8, #259fd9);
+    background: linear-gradient(280deg, #80c7e8, #259fd9);
     border-radius: 1em;
 }
 
