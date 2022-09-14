@@ -32,23 +32,33 @@ body, #main {
 /* mainPage */
 .questionMark {
     width: 4vw;
-    padding-left: 0.3em;
+    padding: 0 0.3em;
 }
 
 .textHomePage {
     display: flex;
     align-items: flex-start;
     width: 80vw;
-    top: 89vw;
+    top: 90vw;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.mainPageText {
+    width: 80vw;
+    top: 98vw;
     font-size: 1.1em;
     font-weight: 600;
 }
 
 .mapButton  {
     width: 15vw;
-    bottom: 9vw;
+    bottom: 7vw;
 }
 
+.mapButtonContainer {
+    bottom: 9vw;
+}
 /* general */
 #home-page, #map-page {
     background-image: url(./assets/media/SVG/bgMain.svg);
@@ -150,7 +160,7 @@ body, #main {
 }
 
 video {
-    top: 28vw;
+    top: 34vw;
     width: 90vw;
     height: 51vw;
 }
@@ -160,15 +170,31 @@ video {
     background-image: url(./assets/media/SVG/map.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 90vw;
-    height: 134vw;
+    width: 86vw;
+    height: 127vw;
     position: absolute;
     left: 50%;
-    top: 54%;
+    top: 52%;
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 0.65fr 0.85fr 0.25fr 1.2fr 1.2fr 0.55fr;
     grid-template-rows: 2.3fr 0.95fr 0.95fr 1.1fr 0.7fr 1.05fr 0.95fr 1.6fr;
+}
+
+.mapInstractions {
+    bottom: 5vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueSqure {
+    width: 8vw;
+    height: 4vh;
+    margin-left: 0.3em;
 }
 
 /* stations */
@@ -222,11 +248,11 @@ ol, ul {
 
 .text {
     width: 80vw;
-    top: 84vw;
+    top: 87vw;
     font-size: 1.1em;
     font-weight: 600;
     overflow-y: scroll;
-    height: 70vw;
+    height: 75vw;
     direction: ltr;
     text-align: right;
     padding-right: 0.6em;
@@ -254,6 +280,10 @@ ol, ul {
     font-size: 1.2em;
 }
 
+.mapButtonStation {
+    width: 13vw;
+    bottom: 1vh;
+}
 /* menu */
 .menuPage {
     position: absolute;

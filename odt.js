@@ -7,7 +7,8 @@ window.addEventListener("load", () => {
     })
     document.querySelectorAll(".station").forEach(station => {
         station.addEventListener("click", (event) => {
-            window.location.pathname = `/odt/${event.currentTarget.classList[1]}.html`
+            window.location.pathname = `/${event.currentTarget.classList[1]}.html`
+            // window.location.pathname = `/odt/${event.currentTarget.classList[1]}.html`
         });
     })
     document.querySelector(".menuButton").addEventListener("click", () => {
