@@ -240,17 +240,18 @@ video {
     grid-area: 6/ 4/ span 1/ span 1;
 }
 
-.spiralStation1 {
+.processingStation1 {
+    grid-area: 2/ 4/ span 1/ span 1;
+}
+
+.processingStation2 {
     grid-area: 6/ 5/ span 1/ span 1;
 }
 
-.spiralStation2 {
+.processingStation3 {
     grid-area: 7/ 5/ span 1/ span 1;
 }
 
-.spiralStation3 {
-    /* grid-area: 6/ 4/ span 1/ span 1; */
-}
 
 ol, ul {
     padding-inline-start: 1em;
