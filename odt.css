@@ -90,6 +90,16 @@ body, #main {
     width: 100%;
 }
 
+#processingPage {
+    background-image: url(./assets/media/SVG/processingBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 #spiderPage {
     background-image: url(./assets/media/SVG/spiderStationBg.svg);
     background-repeat: no-repeat;
@@ -228,6 +238,18 @@ video {
 
 .spiralStation {
     grid-area: 6/ 4/ span 1/ span 1;
+}
+
+.spiralStation1 {
+    grid-area: 6/ 5/ span 1/ span 1;
+}
+
+.spiralStation2 {
+    grid-area: 7/ 5/ span 1/ span 1;
+}
+
+.spiralStation3 {
+    /* grid-area: 6/ 4/ span 1/ span 1; */
 }
 
 ol, ul {
