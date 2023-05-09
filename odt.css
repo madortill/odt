@@ -282,7 +282,23 @@ ol, ul {
     padding-right: 0.6em;
 }
 
+.text-no-video {
+    width: 80vw;
+    top: 15vh;
+    font-size: 1.1em;
+    font-weight: 600;
+    overflow-y: scroll;
+    height: 150vw;
+    direction: ltr;
+    text-align: right;
+    padding-right: 0.6em;
+}
+
 .text > div {
+    direction: rtl;
+}
+
+.text-no-video > div {
     direction: rtl;
 }
 
